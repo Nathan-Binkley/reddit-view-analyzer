@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+selenium = "*"
+pandas = "*"
+
+[dev-packages]
+praw = "*"
+pandas = "*"
+openpyxl = "*"
+
+[scripts]
+start = "python runner.py"
+init = "python getter.py"
+out = "python to_excel.py"
+
+[requires]
+python_version = "3.9"
