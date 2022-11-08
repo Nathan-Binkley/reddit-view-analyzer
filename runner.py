@@ -49,7 +49,6 @@ for i, v in enumerate(urls):
     website = "https://new.reddit.com" + v
     if driver.current_url != website:
         driver.get(website)
-    print("WANT TO GO:", website)
     print("CURRENT URL:", driver.current_url)
     print("Waiting for content to load... (15 seconds)")
     safety_wait(5)

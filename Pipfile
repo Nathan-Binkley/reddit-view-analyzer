@@ -13,9 +13,10 @@ pandas = "*"
 openpyxl = "*"
 
 [scripts]
-start = "python runner.py"
 init = "python getter.py"
+start = "python runner.py"
 out = "python to_excel.py"
+all = "python getter.py && python runner.py && python to_excel.py"
 
 [requires]
 python_version = "3.9"
